@@ -93,3 +93,20 @@ p{
     transform:scale(1.05);
     background:#ff2b6d;
 }
+#enter-screen{
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+#enter-screen h1{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
