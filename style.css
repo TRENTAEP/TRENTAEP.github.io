@@ -13,7 +13,7 @@ body{
 .background{
     position:fixed;
     inset:0;
-    background:url("anfield.jpg") center center/cover no-repeat;
+    background:url("anfield.jpeg") center center/cover no-repeat;
     animation:zoom 25s ease-in-out infinite alternate;
 }
 
