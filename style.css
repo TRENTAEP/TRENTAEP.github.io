@@ -11,12 +11,14 @@ body{
 }
 
 .background{
-    position:fixed;
-    inset:0;
-background: url("aenfildddd.jpeg") center center/cover no-repeat;
-    animation:zoom 25s ease-in-out infinite alternate;
+    position: fixed;
+    inset: 0;
+    background-image: url("aenfildddd.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoom 25s ease-in-out infinite alternate;
 }
-
 .background::after{
     content:"";
     position:absolute;
