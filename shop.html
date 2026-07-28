@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop</title>
 
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0d0d0d;
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-top:30px;
+}
+
+.points{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(255,255,255,.1);
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.price{
+    color:#00ff88;
+    font-size:20px;
+    margin:15px 0;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#00bfff;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0099cc;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🛒 SHOP</h1>
+
+<div class="points">
+🪙 Your Points: <b>0</b>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>🎨 3 CC For After</h2>
+<div class="price">2 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>🔍 Zoom Preset</h2>
+<div class="price">4 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>⭐ LCRF</h2>
+<div class="price">4 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>🌊 Ripple Preset</h2>
+<div class="price">7 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>🔄 Reverse Preset</h2>
+<div class="price">12 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>📢 Story Promotion</h2>
+<div class="price">2 Points</div>
+<button>Buy</button>
+</div>
+
+<div class="card">
+<h2>🎬 Free Edit From Me</h2>
+<div class="price">100 Points</div>
+<button>Buy</button>
+</div>
+
+</div>
+
+</body>
+</html>
