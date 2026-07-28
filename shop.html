@@ -122,4 +122,20 @@ button:hover{
 </div>
 
 </body>
+<script type="module">
+import { db, auth } from "./firebase.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+
+onAuthStateChanged(auth, async (user) => {
+    if (!user) return;
+
+    const snap = await getDoc(doc(db, "users", user.uid));
+
+    if (snap.exists()) {
+        document.getElementById("points").textContent = snap.data().points;
+    }
+});
+</script>
 </html>
+
